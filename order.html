@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema Ticket Order</title>
+    <title>Παραγγελία εισιτηρίου κινηματογράφου</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,39 +56,40 @@
 </head>
 <body>
     <div class="container">
-        <h1>Order Cinema Tickets</h1>
+        <h1>Παραγγείλετε εισιτήρια κινηματογράφου</h1>
         <form action="https://formspree.io/f/mzzpdvrb" method="POST">
-            <label for="name">Full Name</label>
+            <label for="name">Ονοματεπώνυμο</label>
             <input type="text" id="name" name="name" required>
             
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
             
-            <label for="phone">Phone Number</label>
+            <label for="phone">Αριθμός τηλεφώνου</label>
             <input type="text" id="phone" name="phone">
             
-            <label for="movie">Movie</label>
+            <label for="movie">Ταινία</label>
             <select id="movie" name="movie" required>
-                <option value="">Select a movie</option>
-                <option value="Movie 1">Τα μυαλά που κουβαλάς 2</option>
-                <option value="Movie 2">Η εποχή των παγετώνων 2</option>
+                <option value="">Επιλέξτε μια ταινία</option>
+                <option value="Τα μυαλά που κουβαλάς 2">Τα μυαλά που κουβαλάς 2</option>
+                <option value="Εγώ, ο Απαισιότατος
+">Εγώ, ο Απαισιότατος</option>
                 <!-- Add more options as needed -->
             </select>
             
-            <label for="time">Time</label>
+            <label for="time">Ώρα</label>
             <select id="time" name="time" required>
-                <option value="9:00 PM">9:00 PM</option>
+                <option value="9:00 PM">9:00μμ</option>
             </select>
             
-            <label for="tickets">Number of Tickets</label>
+            <label for="tickets">Αριθμός Εισιτηρίων</label>
             <div class="ticket-number">
                 <input type="number" id="tickets" name="tickets" min="1" max="10" required>
             </div>
             
-            <button type="submit">Order Tickets</button>
+            <button type="submit">Παραγγελία εισιτηρίων</button>
         </form>
         <form action="index.html">
-            <button>GO BACK</button>
+            <button>ΠΗΓΑΙΝΕ ΠΙΣΩ</button>
         </form>
     </div>
 
